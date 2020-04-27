@@ -6,10 +6,26 @@ html {
 *::after {
   box-sizing: inherit;
 }
+html,
 body {
-  font-family: "Quicksand-Regular", sans-serif;
-  font-weight: 400; 
-  
+  // height: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
 }
 
 a {
@@ -23,7 +39,16 @@ li {
   list-style-type: none;
 }
 .container {
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 0 15px;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.title {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #000;
+  a {
+    color: #0674ec;
+  }
 }
