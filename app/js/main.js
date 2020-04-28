@@ -44,6 +44,19 @@ $(function () {
         $('.header__top-box').toggleClass('active');
     });
 
+    $('.aside__arrow-down-cat').on('click', function(){
+      $('.aside__list-categories').slideToggle();
+      $('.aside__arrow-down-cat').toggleClass('active');
+    });
+
+    $('.aside__arrow-down').on('click', function(){
+      $('.aside__list-filter').slideToggle();
+      $('.aside__arrow-down').toggleClass('active');
+    });
+
+
+
+
 
     var mixer = mixitup('.product__inner-box');
 
